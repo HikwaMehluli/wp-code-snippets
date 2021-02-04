@@ -201,7 +201,6 @@ add_action( 'init', 'name_of_post_type' );
 
 
 
-
 <!---------------------------------------------
     
     Language Settings
