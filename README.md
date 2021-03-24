@@ -3,7 +3,7 @@
 I created this repo as a time saver for basic "WordPress Theme Development". These are basic starter snippets for thing such as Custom Pagination, Image Manipulation, Custom Post Types etc.
 
 # Contents
-##General WP Snippets
+## General WP Snippets
 - [Loop](#loop)
 - [Page Conditional](#page-conditional)
 - [Go to specific page](#go-to-specific-page)
