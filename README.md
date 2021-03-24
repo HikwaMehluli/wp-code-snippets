@@ -1,6 +1,6 @@
 # WordPress Code Snippets
 
-I created this Repo as a time saving WordPress Theme Development - Starter Snippets of Basics such as custom pagination, Image manipulation, Custom Post Types etc.
+I created this repo as a time saver for basic "WordPress Theme Development". These are basic starter snippets for thing such as Custom Pagination, Image Manipulation, Custom Post Types etc.
 
 ## Contents
-###### 
+###### General WP Snippets
