@@ -186,7 +186,7 @@ add_action( 'init', 'name_of_post_type' );
 
 
 
-<!-- IF ELSE -->
+<!-- If Else -->
 <?php
     if ( block_value( 'block-value' ) ) {
         
