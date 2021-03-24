@@ -2,12 +2,12 @@
 
 I created this repo as a time saver for basic "WordPress Theme Development". These are basic starter snippets for thing such as Custom Pagination, Image Manipulation, Custom Post Types etc.
 
-## Contents
-[General WP Snippets](#general-wp-snippets)
+# Contents
+##General WP Snippets
 [Loop](#loop)
-[Page Conditional](page-conditional)
+[Page Conditional](#page-conditional)
 
-# Loop
+## Loop
 ```php
 <?php
     $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
@@ -36,7 +36,7 @@ I created this repo as a time saver for basic "WordPress Theme Development". The
 <?php endif; ?>
 ```
 
-# Page Conditional
+## Page Conditional
 ```php
 if ( is_front_page() && is_home() ) {
 
