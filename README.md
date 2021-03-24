@@ -11,6 +11,8 @@ I created this repo as a time saver for basic "WordPress Theme Development". The
 - [Go to specific page](#go-to-specific-page)
 - [Custom Post Type Bare Minimum version](#custom-post-type-bare-minimum-version)
 
+## [Images in WordPress](#images-in-wordpress)
+
 ## Loop
 ```php
 /* Place this loop where you want it on your theme page/s */
@@ -178,3 +180,33 @@ add_action( 'init', 'name_of_post_type' );
 ?>
 ```
 [Go Back Up](#contents)
+
+## Images in WordPress
+```php
+<!-- Inline Background Image -->
+<div style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/./path-to-image/the-image.jpg"/></div>
+
+
+<!-- Image inside theme file/s -->
+<img src="<?php echo get_stylesheet_directory_uri(); ?>/./path-to-image/the-image.jpg"/>
+
+
+<!-- Post thumbnail as Background Image -->
+<div style="background-image: url('<?php $thumb_id = get_post_thumbnail_id(); $thumb_url = wp_get_attachment_image_src($thumb_id,'thumbnail-size', true); echo $thumb_url[0]; ?>')">
+	<!-- Content Area -->
+</div>
+
+
+<!-- Create Default Image if no Thumbnail - Must be inside a loop. -->
+<?php
+	if ( has_post_thumbnail() ) {
+		the_post_thumbnail();
+	}
+	else {
+		echo '<img src="' . get_bloginfo( 'stylesheet_directory' ) 
+			. '/images/thumbnail-default.jpg" />';
+	}
+?>
+```
+[Go Back Up](#contents)
+
