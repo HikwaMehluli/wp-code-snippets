@@ -7,7 +7,7 @@ I created this repo as a time saver for basic "WordPress Theme Development". The
 [Loop](#loop)
 [Page Conditional](page-conditional)
 
-#Loop
+# Loop
 ```php
 <?php
     $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
@@ -36,7 +36,7 @@ I created this repo as a time saver for basic "WordPress Theme Development". The
 <?php endif; ?>
 ```
 
-#Page Conditional
+# Page Conditional
 ```php
 if ( is_front_page() && is_home() ) {
 
