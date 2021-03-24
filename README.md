@@ -6,6 +6,8 @@ I created this repo as a time saver for basic "WordPress Theme Development". The
 ###### General WP Snippets
 
 
+
+[Markdown - Link](#general-wp-snippets)
 ```php
 <?php
     $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
