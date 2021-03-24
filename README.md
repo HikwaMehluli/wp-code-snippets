@@ -5,6 +5,8 @@ I created this repo as a time saver for basic "WordPress Theme Development". The
 # Contents
 ## General WP Snippets
 - [Loop](#loop)
+-- [Pagination Function](#pagination-function)
+-- [Pagination SCSS](#pagination-scss)
 - [Page Conditional](#page-conditional)
 - [Go to specific page](#go-to-specific-page)
 - [Custom Post Type Bare Minimum version](#custom-post-type-bare-minimum-version)
@@ -37,9 +39,11 @@ I created this repo as a time saver for basic "WordPress Theme Development". The
     <?php wp_reset_postdata(); ?>
     <?php else : ?>
 <?php endif; ?>
+```
 
-
-/* Pagination Code - Place it in functions.php */
+### Pagination Function
+Place it in functions.php
+```php
 function pagination($pages = '', $range = 4) {
      $showitems = ($range * 2)+1;  
      global $paged;
@@ -68,6 +72,7 @@ function pagination($pages = '', $range = 4) {
      }
 }
 ```
+
 ### Pagination SCSS
 ```scss
 .pagination {
