@@ -37,7 +37,7 @@ I created this repo as a time saver for basic "WordPress Theme Development". The
     <?php else : ?>
 <?php endif; ?>
 ```
-[Go Back Up](#content)
+[Go Back Up](#contents)
 
 ## Page Conditional
 ```php
@@ -62,7 +62,7 @@ I created this repo as a time saver for basic "WordPress Theme Development". The
 	}
 ?>
 ```
-[Go Back Up](#content)
+[Go Back Up](#contents)
 
 ## Go to specific page
 ```php
@@ -105,4 +105,4 @@ add_action( 'init', 'name_of_post_type' );
 
 ?>
 ```
-[Go Back Up](#content)
+[Go Back Up](#contents)
