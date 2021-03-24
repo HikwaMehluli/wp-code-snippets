@@ -4,9 +4,9 @@ I created this repo as a time saver for basic "WordPress Theme Development". The
 
 # Contents
 ##General WP Snippets
-[Loop](#loop)
-[Page Conditional](#page-conditional)
-[Go to specific page](go-to-specific-page)
+- [Loop](#loop)
+- [Page Conditional](#page-conditional)
+- [Go to specific page](#go-to-specific-page)
 
 ## Loop
 ```php
