@@ -40,6 +40,7 @@ I created this repo as a time saver for basic "WordPress Theme Development". The
     <?php else : ?>
 <?php endif; ?>
 ```
+[Go Back Up](#contents)
 
 ### Pagination Function
 Place it in functions.php
@@ -72,6 +73,7 @@ function pagination($pages = '', $range = 4) {
      }
 }
 ```
+[Go Back Up](#contents)
 
 ### Pagination SCSS
 ```scss
@@ -91,29 +93,27 @@ function pagination($pages = '', $range = 4) {
         padding: 15px;
         text-decoration: none;
         width: auto;
-        color: var(--black);
-        background: var(--grey);
+        color: black;
+        background: grey;
     }
 
     a:hover {
-        color: var(--white);
-        background: var(--primary-color);
+        color: white;
+        background: black;
     }
 
     .current {
         padding: 15px;
-        background: var(--primary-color);
-        color: var(--white);
+        background: black;
+        color: white;
     }
 }
-
 ```
-
 [Go Back Up](#contents)
 
 ## Page Conditional
+[Read More - WordPress Codex Conditional Tags](https://codex.wordpress.org/Conditional_Tags)
 ```php
-<!-- Read more on Conditional Tags: https://codex.wordpress.org/Conditional_Tags -->
 <?php
 	if ( is_front_page() && is_home() ) {
 
